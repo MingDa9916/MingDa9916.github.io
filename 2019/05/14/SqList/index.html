@@ -87,18 +87,18 @@
 
 
 
-<meta name="description" content="线性表_顺序表综合应用 %Titanic">
+<meta name="description" content="线性表_顺序表综合应用">
 <meta name="keywords" content="数据结构与算法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SqList">
 <meta property="og:url" content="https://MingDa9916.github.io/2019/05/14/SqList/index.html">
 <meta property="og:site_name" content="TianSan">
-<meta property="og:description" content="线性表_顺序表综合应用 %Titanic">
+<meta property="og:description" content="线性表_顺序表综合应用">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-16T02:58:18.583Z">
+<meta property="og:updated_time" content="2019-05-16T03:16:51.898Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SqList">
-<meta name="twitter:description" content="线性表_顺序表综合应用 %Titanic">
+<meta name="twitter:description" content="线性表_顺序表综合应用">
 
 
 
@@ -353,7 +353,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  526
+                  525
                 </span>
               
 
@@ -391,7 +391,9 @@
 
       
         <h1 id="线性表-顺序表"><a href="#线性表-顺序表" class="headerlink" title="线性表_顺序表"></a><center><font color="#00868B">线性表_顺序表</font></center></h1><h2 id="综合应用"><a href="#综合应用" class="headerlink" title="综合应用"></a><center><font color="#00868B">综合应用</font></center></h2><hr>
-<p>%<a href="http://202.198.77.71:521/123.mp4" target="_blank" rel="noopener">Titanic</a><br><a id="more"></a></p>
+<div style="align: center"><br><video width="650" height="370" controls="controls"><br>     <source src="http://202.198.77.71:521/123.mp4" type="video/mp4"><br></video><br></div>
+
+<a id="more"></a>
 <center>1、删除最小元素，返回并由最后元素填补</center>
 
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">bool Del_Min(SqList &amp;L , ElemType &amp;value)&#123;</span><br><span class="line">	<span class="keyword">if</span>(L.length == <span class="number">0</span>)</span><br><span class="line">		<span class="keyword">return</span> <span class="literal">false</span> ;</span><br><span class="line">	value = L.data(<span class="number">0</span>);</span><br><span class="line">	int pos = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(int i = <span class="number">1</span> ; i&lt;L.length ; i++)&#123;</span><br><span class="line">		<span class="keyword">if</span> (value &lt; L.data(i))&#123;</span><br><span class="line">			value = L.data(i);</span><br><span class="line">			pos = i;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">	L.data(pos) = L.data(L.length<span class="number">-1</span>);</span><br><span class="line">	L.length-- ;</span><br><span class="line">	<span class="keyword">return</span> <span class="literal">true</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -634,7 +636,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">533</span>
+    <span title="Site words total count">532</span>
   
 </div>
 
