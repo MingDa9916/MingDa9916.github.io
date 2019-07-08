@@ -76,7 +76,7 @@
 
 
 
-  <meta name="keywords" content="黑马数据结构,">
+  <meta name="keywords" content="栈,">
 
 
 
@@ -87,18 +87,18 @@
 
 
 
-<meta name="description" content="动态数组1、写一个动态数组必须关心的数据123451、开辟内存的首地址2、元素的个数（好处：我们大概知道当前空间中要存的元素）3、元素的类型，数组容量。不关心数组类型我全部放void *， 为什么用void * 因为数组要实现的任务是能存储任何类型的数据类型，C语言中无论什么数据类型他都有地址，存他的第地址通过地址找元素。当用户插入或删除一个数据时我存起来的是元素的地址，并没有把数据拷贝出来放到">
-<meta name="keywords" content="黑马数据结构">
+<meta name="description" content="1、IO进栈出栈为空栈合法性判别。 1234567891011121314151617181920int Judge (char A[])&amp;#123;	int i = 0;	int j = k = 0;	while (A[i])&amp;#123;		switch (A[i])&amp;#123;			case &amp;apos;I&amp;apos;: k++; break;			case &amp;apos;O&amp;apos;: j+">
+<meta name="keywords" content="栈">
 <meta property="og:type" content="article">
-<meta property="og:title" content="黑马数据结构">
-<meta property="og:url" content="https://MingDa9916.github.io/2019/07/04/黑马数据结构/index.html">
+<meta property="og:title" content="王道_栈_习题">
+<meta property="og:url" content="https://MingDa9916.github.io/2019/07/08/王道-栈-习题/index.html">
 <meta property="og:site_name" content="TianSan">
-<meta property="og:description" content="动态数组1、写一个动态数组必须关心的数据123451、开辟内存的首地址2、元素的个数（好处：我们大概知道当前空间中要存的元素）3、元素的类型，数组容量。不关心数组类型我全部放void *， 为什么用void * 因为数组要实现的任务是能存储任何类型的数据类型，C语言中无论什么数据类型他都有地址，存他的第地址通过地址找元素。当用户插入或删除一个数据时我存起来的是元素的地址，并没有把数据拷贝出来放到">
+<meta property="og:description" content="1、IO进栈出栈为空栈合法性判别。 1234567891011121314151617181920int Judge (char A[])&amp;#123;	int i = 0;	int j = k = 0;	while (A[i])&amp;#123;		switch (A[i])&amp;#123;			case &amp;apos;I&amp;apos;: k++; break;			case &amp;apos;O&amp;apos;: j+">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-04T13:34:54.554Z">
+<meta property="og:updated_time" content="2019-07-08T11:05:49.946Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="黑马数据结构">
-<meta name="twitter:description" content="动态数组1、写一个动态数组必须关心的数据123451、开辟内存的首地址2、元素的个数（好处：我们大概知道当前空间中要存的元素）3、元素的类型，数组容量。不关心数组类型我全部放void *， 为什么用void * 因为数组要实现的任务是能存储任何类型的数据类型，C语言中无论什么数据类型他都有地址，存他的第地址通过地址找元素。当用户插入或删除一个数据时我存起来的是元素的地址，并没有把数据拷贝出来放到">
+<meta name="twitter:title" content="王道_栈_习题">
+<meta name="twitter:description" content="1、IO进栈出栈为空栈合法性判别。 1234567891011121314151617181920int Judge (char A[])&amp;#123;	int i = 0;	int j = k = 0;	while (A[i])&amp;#123;		switch (A[i])&amp;#123;			case &amp;apos;I&amp;apos;: k++; break;			case &amp;apos;O&amp;apos;: j+">
 
 
 
@@ -128,12 +128,12 @@
 
 
 
-  <link rel="canonical" href="https://MingDa9916.github.io/2019/07/04/黑马数据结构/">
+  <link rel="canonical" href="https://MingDa9916.github.io/2019/07/08/王道-栈-习题/">
 
 
 
 
-  <title>黑马数据结构 | TianSan</title>
+  <title>王道_栈_习题 | TianSan</title>
   
 
 
@@ -270,7 +270,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://MingDa9916.github.io/2019/07/04/黑马数据结构/">
+    <link itemprop="mainEntityOfPage" href="https://MingDa9916.github.io/2019/07/08/王道-栈-习题/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="TianSan">
@@ -287,7 +287,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">黑马数据结构</h1>
+          <h1 class="post-title" itemprop="name headline">王道_栈_习题</h1>
         
 
         <div class="post-meta">
@@ -299,8 +299,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-04T19:19:32+08:00">
-                2019-07-04
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-08T18:07:58+08:00">
+                2019-07-08
               </time>
             
 
@@ -322,8 +322,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Day-One/" itemprop="url" rel="index">
-                    <span itemprop="name">Day One</span>
+                  <a href="/categories/王道数据结构/" itemprop="url" rel="index">
+                    <span itemprop="name">王道数据结构</span>
                   </a>
                 </span>
 
@@ -353,7 +353,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  598
+                  418
                 </span>
               
 
@@ -390,11 +390,14 @@
       
 
       
-        <hr>
-<h1 id="动态数组"><a href="#动态数组" class="headerlink" title="动态数组"></a>动态数组</h1><p>1、写一个动态数组必须关心的数据<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="number">1</span>、开辟内存的首地址</span><br><span class="line"><span class="number">2</span>、元素的个数（好处：我们大概知道当前空间中要存的元素）</span><br><span class="line"><span class="number">3</span>、元素的类型，数组容量。不关心数组类型我全部放<span class="keyword">void</span> *， 为什么用<span class="keyword">void</span> * 因为数组要实现的任务是能存储任何类型的数据类型，C语言中无论什么数据类型他都有地址，存他的第地址通过地址找元素。当用户插入或删除一个数据时我存起来的是元素的地址，并没有把数据拷贝出来放到我的容器里。数组里面存的用户的开辟数据的地址，用户开辟大数据如果开辟到堆上，释放数组时候可以将其释放，如果开辟到栈上释放掉就放着翻车了，所以，数组的唯一目的就是将用户的数据串联起来，串联成数组串联成链表串联成二叉树，内存释放与否不管。</span><br><span class="line"><span class="number">4</span>、动态数组类型定义为<span class="keyword">void</span>**</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#define _CRT_SECURE_NO_WARNINGS</span><br><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">#include&lt;string.h&gt;</span><br><span class="line">#include&lt;stdlib.h&gt;</span><br><span class="line"></span><br><span class="line">//先把所需要的数据信息结构定义下来，接下来提供的任何的接口函数，都是对结构体中的元素操作。</span><br><span class="line">struct DynamicArray</span><br><span class="line">&#123;</span><br><span class="line">	//数组存储元素的空间的首地址</span><br><span class="line">	void **addr;;</span><br><span class="line">	//存储数据的内存中最大能容纳多少元素</span><br><span class="line">	int capacity;//容量</span><br><span class="line">	//当前存储数据的内存中有多少个元素</span><br><span class="line">	int size; //大小</span><br><span class="line">&#125;；//接下来所有的接口、函数，都是针对这个结构体进行操作，因为这个结构体包括了数组的一切信息。</span><br><span class="line">int main()&#123;</span><br><span class="line">//初始化数组，返回一个结构体（就相当于造个指针），返回一个什么样子的结构体呢？需要初始化标识。</span><br><span class="line">struct DynamicArray *Init_DynamicArray(int capacity)</span><br><span class="line">//struct DynamicArray——构造出什么样结构的数组；Init_DynamicArray(int capacity)——怎么初始化。</span><br><span class="line">&#123;</span><br><span class="line">	if(capacity &lt;=0)</span><br><span class="line">	&#123;</span><br><span class="line">		return NULL;</span><br><span class="line">	&#125;</span><br><span class="line">	struct DynamicArray *arr = malloc(sizeof(struct DynamiacArray));</span><br><span class="line">	if (NULL==arr)</span><br><span class="line">	&#123;</span><br><span class="line">	return NULL；</span><br><span class="line">	&#125;</span><br><span class="line">	arr-&gt;capacity = capacity;</span><br><span class="line">	arr-&gt;addr = mallloc(sizeof(void *)*arr-&gt;capacity);</span><br><span class="line">&#125;</span><br><span class="line">//插入元素——定义了插入元素的函数</span><br><span class="line">void Insert(struct DynamicArray *arr, int pos, void *data);</span><br><span class="line">//遍历——遍历函数</span><br><span class="line">void Froeach(struct DynamicArray *arr,void(*_callback)(void *))</span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">	system(&quot;pause&quot;);</span><br><span class="line">	return EXIT_SUCCESS;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h1 id="1、IO进栈出栈为空栈合法性判别。"><a href="#1、IO进栈出栈为空栈合法性判别。" class="headerlink" title="1、IO进栈出栈为空栈合法性判别。"></a>1、IO进栈出栈为空栈合法性判别。</h1><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">int Judge (char A[])&#123;</span><br><span class="line">	int i = 0;</span><br><span class="line">	int j = k = 0;</span><br><span class="line">	while (A[i])&#123;</span><br><span class="line">		switch (A[i])&#123;</span><br><span class="line">			case &apos;I&apos;: k++; break;</span><br><span class="line">			case &apos;O&apos;: j++;</span><br><span class="line">			if (j&gt;k)&#123;</span><br><span class="line">				printf (&quot;出入栈非法！/n&quot;)；</span><br><span class="line">				return 0；</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		i++;</span><br><span class="line">	&#125;</span><br><span class="line">	if (j!=k)&#123;</span><br><span class="line">		printf (&quot;队列不合法！/n&quot;)；</span><br><span class="line">		return 0；</span><br><span class="line">	&#125;</span><br><span class="line">	else printf (&quot;队列合法！/n&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
-
+<h1 id="2、单链表头指针为L，结点结构体是data-amp-next，现判断其是否对称？"><a href="#2、单链表头指针为L，结点结构体是data-amp-next，现判断其是否对称？" class="headerlink" title="2、单链表头指针为L，结点结构体是data&amp;next，现判断其是否对称？"></a>2、单链表头指针为L，结点结构体是data&amp;next，现判断其是否对称？</h1><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">int DC_Char(LinkList&amp; L, int n)&#123;</span><br><span class="line">//由于已经给了单链表长度就不用侧脸其长度了</span><br><span class="line">char A[n/2];</span><br><span class="line">int i = 0;</span><br><span class="line">p = L-&gt;next;</span><br><span class="line">for (;i&lt;n/2;i++)&#123;</span><br><span class="line">	A[i] = p-&gt;data;</span><br><span class="line">	p = p-&gt;next;</span><br><span class="line">&#125;</span><br><span class="line">i--;</span><br><span class="line">if (n%2 == 1)p = p-&gt;next;</span><br><span class="line">while(p!=NULL&amp;&amp;A[i]==p-&gt;data)&#123;</span><br><span class="line">	i--;</span><br><span class="line">	p = p-&gt;next;</span><br><span class="line">&#125;</span><br><span class="line">i++;</span><br><span class="line">if (i==0)return 1;</span><br><span class="line">else &#123;printf (&quot;不对称！/n&quot;);return 0;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="共享栈的结构体定义、进栈、出栈"><a href="#共享栈的结构体定义、进栈、出栈" class="headerlink" title="共享栈的结构体定义、进栈、出栈"></a>共享栈的结构体定义、进栈、出栈</h1><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#define maxsize 100</span><br><span class="line">#define Elemtype int</span><br><span class="line">//结构体定义</span><br><span class="line">typedef struct &#123;</span><br><span class="line">	ElemType stack[maxsize];</span><br><span class="line">	int top[2];</span><br><span class="line">&#125; stk;</span><br><span class="line">stk s ;</span><br><span class="line">//进栈</span><br><span class="line">bool PushStack(ElemType x, int i)&#123;</span><br><span class="line">	if (i != 0 || i != 1)&#123;</span><br><span class="line">		printf(&quot;栈号错误！/n&quot;)</span><br><span class="line">		exit(0);</span><br><span class="line">	&#125;</span><br><span class="line">	switch (i)&#123;</span><br><span class="line">		case 0 :</span><br><span class="line">			if (s.top[0]-s.top[0]==1)&#123;</span><br><span class="line">				printf (&quot;栈满！/n&quot;)；</span><br><span class="line">				return 0;</span><br><span class="line">			&#125;</span><br><span class="line">			else s.stack[++top[0]]=x;</span><br><span class="line">	&#125;</span><br><span class="line">			case 1 :</span><br><span class="line">			if (s.top[1]-s.top[0]==1)&#123;</span><br><span class="line">				printf (&quot;栈满！/n&quot;)；</span><br><span class="line">				return 0;</span><br><span class="line">			&#125;</span><br><span class="line">			else s.stack[--top[0]]=x;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">//出栈</span><br><span class="line">bool PopStack(ElemType x, int i)&#123;</span><br><span class="line">	if (i != 0 || i != 1)&#123;</span><br><span class="line">		printf(&quot;栈号错误！/n&quot;)</span><br><span class="line">		exit(0);</span><br><span class="line">	&#125;</span><br><span class="line">	if(s.stxck[s.top[0]]&lt;=-1 || s.stxck[s.top[0]]&gt;=maxsize) return 0;</span><br><span class="line">	switch (i)&#123;</span><br><span class="line">		case 1: &#123;</span><br><span class="line">			x = s.stack[s.top[1]];</span><br><span class="line">			--s.top[1];</span><br><span class="line">			return 1;</span><br><span class="line">			&#125;</span><br><span class="line">		case 0: &#123;</span><br><span class="line">			x = s.stack[s.top[0]];</span><br><span class="line">			--s.top[0];</span><br><span class="line">			return 1;</span><br><span class="line">			&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -419,7 +422,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/黑马数据结构/" rel="tag"># 黑马数据结构</a>
+            <a href="/tags/栈/" rel="tag"># 栈</a>
           
         </div>
       
@@ -432,8 +435,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/06/23/经典语录/" rel="next" title="经典语录">
-                <i class="fa fa-chevron-left"></i> 经典语录
+              <a href="/2019/07/04/黑马数据结构/" rel="next" title="黑马数据结构">
+                <i class="fa fa-chevron-left"></i> 黑马数据结构
               </a>
             
           </div>
@@ -442,8 +445,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/07/08/王道-栈-习题/" rel="prev" title="王道_栈_习题">
-                王道_栈_习题 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/07/08/王道-队列-基础/" rel="prev" title="王道_队列_基础">
+                王道_队列_基础 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -590,7 +593,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#动态数组"><span class="nav-text">动态数组</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1、IO进栈出栈为空栈合法性判别。"><span class="nav-text">1、IO进栈出栈为空栈合法性判别。</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2、单链表头指针为L，结点结构体是data-amp-next，现判断其是否对称？"><span class="nav-text">2、单链表头指针为L，结点结构体是data&amp;next，现判断其是否对称？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#共享栈的结构体定义、进栈、出栈"><span class="nav-text">共享栈的结构体定义、进栈、出栈</span></a></li></ol></div>
             
 
           </div>

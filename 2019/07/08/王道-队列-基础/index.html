@@ -76,7 +76,7 @@
 
 
 
-  <meta name="keywords" content="黑马数据结构,">
+  <meta name="keywords" content="Hexo, NexT">
 
 
 
@@ -87,18 +87,18 @@
 
 
 
-<meta name="description" content="动态数组1、写一个动态数组必须关心的数据123451、开辟内存的首地址2、元素的个数（好处：我们大概知道当前空间中要存的元素）3、元素的类型，数组容量。不关心数组类型我全部放void *， 为什么用void * 因为数组要实现的任务是能存储任何类型的数据类型，C语言中无论什么数据类型他都有地址，存他的第地址通过地址找元素。当用户插入或删除一个数据时我存起来的是元素的地址，并没有把数据拷贝出来放到">
-<meta name="keywords" content="黑马数据结构">
+<meta name="description" content="马革裹尸 向死而生">
+<meta name="keywords" content="ZMD">
 <meta property="og:type" content="article">
-<meta property="og:title" content="黑马数据结构">
-<meta property="og:url" content="https://MingDa9916.github.io/2019/07/04/黑马数据结构/index.html">
+<meta property="og:title" content="王道_队列_基础">
+<meta property="og:url" content="https://MingDa9916.github.io/2019/07/08/王道-队列-基础/index.html">
 <meta property="og:site_name" content="TianSan">
-<meta property="og:description" content="动态数组1、写一个动态数组必须关心的数据123451、开辟内存的首地址2、元素的个数（好处：我们大概知道当前空间中要存的元素）3、元素的类型，数组容量。不关心数组类型我全部放void *， 为什么用void * 因为数组要实现的任务是能存储任何类型的数据类型，C语言中无论什么数据类型他都有地址，存他的第地址通过地址找元素。当用户插入或删除一个数据时我存起来的是元素的地址，并没有把数据拷贝出来放到">
+<meta property="og:description" content="马革裹尸 向死而生">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-04T13:34:54.554Z">
+<meta property="og:updated_time" content="2019-07-08T10:08:21.591Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="黑马数据结构">
-<meta name="twitter:description" content="动态数组1、写一个动态数组必须关心的数据123451、开辟内存的首地址2、元素的个数（好处：我们大概知道当前空间中要存的元素）3、元素的类型，数组容量。不关心数组类型我全部放void *， 为什么用void * 因为数组要实现的任务是能存储任何类型的数据类型，C语言中无论什么数据类型他都有地址，存他的第地址通过地址找元素。当用户插入或删除一个数据时我存起来的是元素的地址，并没有把数据拷贝出来放到">
+<meta name="twitter:title" content="王道_队列_基础">
+<meta name="twitter:description" content="马革裹尸 向死而生">
 
 
 
@@ -128,12 +128,12 @@
 
 
 
-  <link rel="canonical" href="https://MingDa9916.github.io/2019/07/04/黑马数据结构/">
+  <link rel="canonical" href="https://MingDa9916.github.io/2019/07/08/王道-队列-基础/">
 
 
 
 
-  <title>黑马数据结构 | TianSan</title>
+  <title>王道_队列_基础 | TianSan</title>
   
 
 
@@ -270,7 +270,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://MingDa9916.github.io/2019/07/04/黑马数据结构/">
+    <link itemprop="mainEntityOfPage" href="https://MingDa9916.github.io/2019/07/08/王道-队列-基础/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="TianSan">
@@ -287,7 +287,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">黑马数据结构</h1>
+          <h1 class="post-title" itemprop="name headline">王道_队列_基础</h1>
         
 
         <div class="post-meta">
@@ -299,8 +299,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-04T19:19:32+08:00">
-                2019-07-04
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-08T18:08:21+08:00">
+                2019-07-08
               </time>
             
 
@@ -309,28 +309,6 @@
             
           </span>
 
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Day-One/" itemprop="url" rel="index">
-                    <span itemprop="name">Day One</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -353,7 +331,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  598
+                  0
                 </span>
               
 
@@ -369,7 +347,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  2
+                  1
                 </span>
               
             </div>
@@ -390,11 +368,7 @@
       
 
       
-        <hr>
-<h1 id="动态数组"><a href="#动态数组" class="headerlink" title="动态数组"></a>动态数组</h1><p>1、写一个动态数组必须关心的数据<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="number">1</span>、开辟内存的首地址</span><br><span class="line"><span class="number">2</span>、元素的个数（好处：我们大概知道当前空间中要存的元素）</span><br><span class="line"><span class="number">3</span>、元素的类型，数组容量。不关心数组类型我全部放<span class="keyword">void</span> *， 为什么用<span class="keyword">void</span> * 因为数组要实现的任务是能存储任何类型的数据类型，C语言中无论什么数据类型他都有地址，存他的第地址通过地址找元素。当用户插入或删除一个数据时我存起来的是元素的地址，并没有把数据拷贝出来放到我的容器里。数组里面存的用户的开辟数据的地址，用户开辟大数据如果开辟到堆上，释放数组时候可以将其释放，如果开辟到栈上释放掉就放着翻车了，所以，数组的唯一目的就是将用户的数据串联起来，串联成数组串联成链表串联成二叉树，内存释放与否不管。</span><br><span class="line"><span class="number">4</span>、动态数组类型定义为<span class="keyword">void</span>**</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#define _CRT_SECURE_NO_WARNINGS</span><br><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">#include&lt;string.h&gt;</span><br><span class="line">#include&lt;stdlib.h&gt;</span><br><span class="line"></span><br><span class="line">//先把所需要的数据信息结构定义下来，接下来提供的任何的接口函数，都是对结构体中的元素操作。</span><br><span class="line">struct DynamicArray</span><br><span class="line">&#123;</span><br><span class="line">	//数组存储元素的空间的首地址</span><br><span class="line">	void **addr;;</span><br><span class="line">	//存储数据的内存中最大能容纳多少元素</span><br><span class="line">	int capacity;//容量</span><br><span class="line">	//当前存储数据的内存中有多少个元素</span><br><span class="line">	int size; //大小</span><br><span class="line">&#125;；//接下来所有的接口、函数，都是针对这个结构体进行操作，因为这个结构体包括了数组的一切信息。</span><br><span class="line">int main()&#123;</span><br><span class="line">//初始化数组，返回一个结构体（就相当于造个指针），返回一个什么样子的结构体呢？需要初始化标识。</span><br><span class="line">struct DynamicArray *Init_DynamicArray(int capacity)</span><br><span class="line">//struct DynamicArray——构造出什么样结构的数组；Init_DynamicArray(int capacity)——怎么初始化。</span><br><span class="line">&#123;</span><br><span class="line">	if(capacity &lt;=0)</span><br><span class="line">	&#123;</span><br><span class="line">		return NULL;</span><br><span class="line">	&#125;</span><br><span class="line">	struct DynamicArray *arr = malloc(sizeof(struct DynamiacArray));</span><br><span class="line">	if (NULL==arr)</span><br><span class="line">	&#123;</span><br><span class="line">	return NULL；</span><br><span class="line">	&#125;</span><br><span class="line">	arr-&gt;capacity = capacity;</span><br><span class="line">	arr-&gt;addr = mallloc(sizeof(void *)*arr-&gt;capacity);</span><br><span class="line">&#125;</span><br><span class="line">//插入元素——定义了插入元素的函数</span><br><span class="line">void Insert(struct DynamicArray *arr, int pos, void *data);</span><br><span class="line">//遍历——遍历函数</span><br><span class="line">void Froeach(struct DynamicArray *arr,void(*_callback)(void *))</span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">	system(&quot;pause&quot;);</span><br><span class="line">	return EXIT_SUCCESS;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<hr>
-
+        
       
     </div>
     
@@ -417,12 +391,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/黑马数据结构/" rel="tag"># 黑马数据结构</a>
-          
-        </div>
-      
 
       
       
@@ -432,8 +400,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/06/23/经典语录/" rel="next" title="经典语录">
-                <i class="fa fa-chevron-left"></i> 经典语录
+              <a href="/2019/07/08/王道-栈-习题/" rel="next" title="王道_栈_习题">
+                <i class="fa fa-chevron-left"></i> 王道_栈_习题
               </a>
             
           </div>
@@ -442,8 +410,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/07/08/王道-栈-习题/" rel="prev" title="王道_栈_习题">
-                王道_栈_习题 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/07/08/算法笔记-C-C-入门/" rel="prev" title="算法笔记_C/C++入门">
+                算法笔记_C/C++入门 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -498,17 +466,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -580,22 +539,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#动态数组"><span class="nav-text">动态数组</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
